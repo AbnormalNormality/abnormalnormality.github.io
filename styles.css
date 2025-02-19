@@ -1,13 +1,14 @@
 .centred {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .smalltext {
-    font-size: 0.6em;
+    font-size: 0.75em;
 }
 
 body {
-    background-image: linear-gradient(135deg, #ffe, #fef);
+    background-image: linear-gradient(135deg, #eff, #ffe, #fef);
     background-attachment: fixed;
 }
