@@ -3,6 +3,8 @@
   --container-background: #eee;
 
   --color: #000;
+
+  --background-gradient: linear-gradient(135deg, #eff, #ffe, #fef);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,13 +13,18 @@
     --container-background: #666;
 
     --color: #fff;
+
+    --background-gradient: linear-gradient(135deg, #455, #5544, #545);
   }
 }
 
-body:first-child {
+body {
   background-color: var(--background-color);
   color: var(--color);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background-image: var(--background-gradient);
+  background-attachment: fixed;
 }
 
 .container {
@@ -38,4 +45,8 @@ body:first-child {
 
 h3 + p {
   padding-left: 30px;
+}
+
+body:last-child {
+  margin-bottom: 10px;
 }
