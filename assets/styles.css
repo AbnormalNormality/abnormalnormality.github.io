@@ -1,0 +1,41 @@
+:root {
+  --background-color: #fff;
+  --container-background: #eee;
+
+  --color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #444;
+    --container-background: #666;
+
+    --color: #fff;
+  }
+}
+
+body:first-child {
+  background-color: var(--background-color);
+  color: var(--color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: var(--container-background);
+  width: 90%;
+  margin: 5% auto;
+  padding: 20px;
+}
+
+.smalltext {
+  font-size: 0.75em;
+}
+
+.centered {
+  text-align: center;
+  display: block;
+}
+
+h3 + p {
+  padding-left: 30px;
+}
