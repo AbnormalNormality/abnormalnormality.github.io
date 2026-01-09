@@ -3,7 +3,6 @@
   "short_name": "AliaNormality",
   "start_url": "/index.html",
   "display": "standalone",
-  "orientation": "portrait",
   "icons": [
     {
       "src": "/assets/icon512x512.png",
