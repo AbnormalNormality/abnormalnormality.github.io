@@ -1,5 +1,9 @@
 //cSpell:ignore aest
 
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js").catch(() => {});
+}
+
 const local = new Date();
 local.setHours(0, 0, 0, 0);
 const aest = new Date(local.toLocaleString("en-AU", { timeZone: "Australia/Brisbane" }));

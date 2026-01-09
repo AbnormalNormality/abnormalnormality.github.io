@@ -1,14 +1,20 @@
 {
   "name": "AbnormalNormality",
   "short_name": "AliaNormality",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/assets/favicon64x64.png",
+      "src": "/assets/icon512x512.png",
       "type": "image/png",
-      "sizes": "64x64"
+      "sizes": "512x512"
+    },
+    {
+      "src": "/assets/icon512x512maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ]
 }
