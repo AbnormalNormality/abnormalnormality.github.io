@@ -1,0 +1,19 @@
+{
+  "name": "abnormalnormality.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.mjs src/**/*.ts",
+    "watch": "node build.mjs src/**/*.ts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "terser": "^5.44.1"
+  }
+}

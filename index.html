@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#808080" />
+
+    <title>AbnormalNormality</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/favicon16x16.png" type="image/png" sizes="" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <div id="main-content">
+      <h1 class="centred-text">Hey, I'm Alia!</h1>
+
+      <div class="card-row">
+        <div class="card" id="who-am-i">
+          <h2 class="centred-text">Who am I?</h2>
+          <hr />
+
+          <p>I'm an <b>Aussie</b> programmer who likes to make silly websites.</p>
+          <p>My preferred pronouns are <b>she/her</b>.</p>
+        </div>
+
+        <div class="card" id="timezone">
+          <h2 class="centred-text">Links and timezones</h2>
+          <hr />
+
+          <div class="link-row">
+            <div class="link">
+              <a class="centred-text" href="https://github.com/AbnormalNormality">GitHub</a>
+            </div>
+          </div>
+
+          <p>My state is <b>{tzaDiffAbs} hours {tzaDirection}</b> of you!</p>
+          <p>Your <b>00:00</b> is its <b>{tzaMidnight}:00</b>.</p>
+        </div>
+      </div>
+
+      <div class="card small-card">
+        <h2 class="centred-text">Look at my pets!</h2>
+
+        <div class="image-gallery">
+          <img src="assets/bob.jpg" />
+          <p class="centred-text">Bobcat Idiboo</p>
+          <img src="assets/sylvie.jpg" />
+          <p class="centred-text small-text">Sylvie Destroyer of Worlds</p>
+        </div>
+      </div>
+
+      <h1 class="centred-text">Projects</h1>
+
+      <p class="centred-text light-text small-text">Nothing notable</p>
+    </div>
+
+    <script src="src/scripts/main.js"></script>
+  </body>
+</html>

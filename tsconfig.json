@@ -1,0 +1,13 @@
+{
+  "include": ["src/scripts/*.ts"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ESNext", "dom"],
+    "strict": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
