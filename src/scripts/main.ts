@@ -6,13 +6,13 @@ if ("serviceWorker" in navigator) {
 
 const local = new Date();
 local.setHours(0, 0, 0, 0);
-const aest = new Date(local.toLocaleString("en-AU", { timeZone: "Australia/Brisbane" }));
+const aest = new Date(local.toLocaleString("en-US", { timeZone: "Australia/Brisbane" }));
 const dif = local.getUTCHours() - aest.getUTCHours();
 
 const textVariables = {
   tzaDiff: dif.toString(),
   tzaDiffAbs: Math.abs(dif).toString(),
-  tzaDirection: dif >= 0 ? "ahead" : "behind",
+  tzaDirection: dif >= 0 ? "ahead of" : "behind",
   tzaMidnight: aest.getHours().toString().padStart(2, "0"),
 };
 
@@ -22,11 +22,11 @@ for (const [key, value] of Object.entries(textVariables)) {
 }
 document.body.innerHTML = bodyHtml;
 
-document.addEventListener("click", (e) => {
-  if (e.target === document.body) {
-    console.log(document.activeElement);
-  }
-});
+// document.addEventListener("click", (e) => {
+//   if (e.target === document.body) {
+//     console.log(document.activeElement);
+//   }
+// });
 
 document.querySelectorAll<HTMLDivElement>(".card").forEach((card, i) => {
   card.tabIndex = i + 1;
